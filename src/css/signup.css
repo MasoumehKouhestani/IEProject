@@ -42,6 +42,6 @@ h1 {
 }
 
 /*--Type Radio Button--*/
-#student_type_signup, #non-student-type_signup {
+input[name=type_signup] {
   width: 10%;
 }

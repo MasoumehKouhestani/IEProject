@@ -1,0 +1,23 @@
+/*--Body--*/
+body {
+  background-color: #ebebeb;
+}
+
+/*--Font--*/
+* {
+  font-family: "Comic Sans MS", serif;
+}
+
+/*--User Authentication Header--*/
+h1 {
+  color: darkcyan;
+}
+
+/*--Information Box--*/
+.person_info {
+  padding: 1%;
+  border: 2px solid darkcyan;
+  border-radius: 1%;
+  background-color: white;
+}
+

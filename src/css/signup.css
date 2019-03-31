@@ -1,3 +1,8 @@
+/*--Body--*/
+body {
+  background-color: #ebebeb;
+}
+
 /*--Font--*/
 * {
   font-family: "Comic Sans MS", serif;
@@ -7,7 +12,7 @@
 #signup_btn_div {
 }
 
-/*--Login Button Input--*/
+/*--Sign Up Button Input--*/
 #signup_btn {
   width: 100%;
   color: white;
@@ -15,7 +20,7 @@
   font-size: 100%;
 }
 
-/*--Login Header--*/
+/*--Sign Up Header--*/
 h1 {
   color: #17a2b8;
 }
@@ -36,6 +41,7 @@ h1 {
   width: 4%;
 }
 
-/*--Email Warning P--*/
-
-/*--Password Warning P--*/
+/*--Type Radio Button--*/
+#student_type_signup, #non-student-type_signup {
+  width: 10%;
+}

@@ -1,0 +1,17 @@
+#modir-top-nav{
+    display: none;
+    font-size:x-small !important;
+}
+#carmand-top-nav{
+
+
+}
+#student-top-nav{
+    display: none;
+}
+.active1{
+    background-color: #0056b3;
+}
+body{
+    background-color:#f1f3fa;
+}

@@ -9,7 +9,7 @@
 #student-top-nav{
 
 }
-.active1{
+.activenavitem{
     background-color: #0056b3;
 }
 body{
@@ -18,4 +18,7 @@ body{
 
 .headofinput{
     font-size:large;
+}
+a{
+    cursor: pointer;
 }

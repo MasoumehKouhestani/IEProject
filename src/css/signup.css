@@ -1,0 +1,47 @@
+/*--Body--*/
+body {
+  background-color: #ebebeb;
+}
+
+/*--Font--*/
+* {
+  font-family: "Comic Sans MS", serif;
+}
+
+/*--Sign Up Button Div--*/
+#signup_btn_div {
+}
+
+/*--Sign Up Button Input--*/
+#signup_btn {
+  width: 100%;
+  color: white;
+  background-color: #17a2b8;
+  font-size: 100%;
+}
+
+/*--Sign Up Header--*/
+h1 {
+  color: #17a2b8;
+}
+
+/*--Warning--*/
+.warning {
+
+}
+
+.warning p {
+  float: left;
+  color: red;
+  width: 96%;
+}
+
+.warning img {
+  float: left;
+  width: 4%;
+}
+
+/*--Type Radio Button--*/
+input[name=type_signup] {
+  width: 10%;
+}

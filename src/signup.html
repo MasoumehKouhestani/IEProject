@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="css/signup.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">TELLus</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!--Sign Up Form-->
+<div class="col-lg-4">
+</div>
+
+<div class="col-lg-4">
+  <h1 class="text-center">
+    Sign Up
+  </h1>
+  <form method="post" class="form-group">
+    <div class="form-group">
+      <label for="name_signup">Name and LastName:</label>
+      <input type="text" id="name_signup" name="name_signup" class="form-control"
+             placeholder="Enter your Name and LastName"/>
+      <div class="warning">
+        <p>Name and LastName is not valid!</p>
+        <img src="img/alarm.png">
+      </div>
+      <br>
+    </div>
+    <div class="form-group">
+      <label for="username_signup">UserName:</label>
+      <input type="text" id="username_signup" name="username_signup" class="form-control"
+             placeholder="Enter your UserName"/>
+      <div class="warning">
+        <p>UserName is not valid!</p>
+        <img src="img/alarm.png">
+      </div>
+      <br>
+    </div>
+    <div class="form-group">
+      <label for="email_signup">Email:</label>
+      <input type="email" id="email_signup" name="email_signup" class="form-control" placeholder="Enter your Email"/>
+      <div class="warning">
+        <p>Email is not valid!</p>
+        <img src="img/alarm.png">
+      </div>
+      <br>
+    </div>
+    <div class="form-group">
+      <label for="password_signup">Password:</label>
+      <input type="password" id="password_signup" name="password_signup" class="form-control"
+             placeholder="Enter your password"/>
+      <div class="warning">
+        <p>Password is not valid!</p>
+        <img src="img/alarm.png">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Position:</label><br>
+      <input type="radio" id="student_type_signup" name="type_signup" class="form-control" value="Student">Student<br>
+      <input type="radio" id="Manager-type_signup" name="type_signup" class="form-control" value="Manager">Manager<br>
+      <input type="radio" id="Employee-type_signup" name="type_signup" class="form-control" value="Employee">Employee<br>
+      <input type="radio" id="Professor-type_signup" name="type_signup" class="form-control" value="Professor">Professor<br>
+    </div>
+    <div id="signup_btn_div" class="form-group">
+      <input id="signup_btn" type="submit" class="form-control btn submit-btn" value="Sign Up"/>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

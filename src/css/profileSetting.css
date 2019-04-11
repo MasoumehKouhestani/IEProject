@@ -1,0 +1,46 @@
+/*--Body--*/
+body {
+  background-color: #ebebeb;
+}
+
+/*--Font--*/
+* {
+  font-family: "Comic Sans MS", serif;
+}
+
+/*--Edit Profile Button Div--*/
+#edit_profile_btn_div {
+}
+
+/*--Edit Profile Button Input--*/
+#edit_profile_btn {
+  width: 100%;
+  color: white;
+  background-color: darkgoldenrod;
+  font-size: 100%;
+}
+
+/*--Edit Profile Header--*/
+h1 {
+  color: darkgoldenrod;
+}
+
+/*--Warning--*/
+.warning {
+
+}
+
+.warning p {
+  float: left;
+  color: red;
+  width: 96%;
+}
+
+.warning img {
+  float: left;
+  width: 4%;
+}
+
+/*--Email Warning P--*/
+
+/*--Password Warning P--*/

@@ -9,8 +9,8 @@ body {
 }
 
 /*--Row--*/
-.row {
-  background-color: white;
+.col-lg-6 {
+  background-color: #d4edda;
 }
 
 /*--Edit Profile Button Input--*/

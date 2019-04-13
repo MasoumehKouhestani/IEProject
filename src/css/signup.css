@@ -9,8 +9,8 @@ body {
 }
 
 /*--Row--*/
-.row {
-  background-color: white;
+.col-lg-6 {
+  background-color: #d4edda;
   margin-top:5%;
 }
 
@@ -31,6 +31,7 @@ h1 {
 label {
   text-align: right;
   width: 100%;
+  font-weight: bold;
 }
 
 /*--Warning--*/
@@ -46,7 +47,7 @@ label {
 }
 
 .warning img {
-  width: 4%;
+  width: 3%;
 }
 
 /*--Type Radio Button--*/

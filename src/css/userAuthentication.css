@@ -14,9 +14,12 @@ h1 {
 }
 
 /*--Label--*/
-label {
+.label {
   color: #0056b3;
   font-weight: bold;
+}
+
+span {
 }
 
 /*--Information Box--*/

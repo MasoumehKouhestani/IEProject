@@ -1,6 +1,6 @@
 /*--Body--*/
 body {
-  background-color: #ebebeb;
+  background-color: #f1f3fa;
 }
 
 /*--Font--*/
@@ -8,39 +8,44 @@ body {
   font-family: "Comic Sans MS", serif;
 }
 
-/*--Login Button Div--*/
-#login_btn_div {
+/*--Row--*/
+.row {
+  background-color: white;
+  margin-top:5%;
 }
 
 /*--Login Button Input--*/
 #login_btn {
   width: 100%;
   color: white;
-  background-color: #28a745;
   font-size: 100%;
 }
 
 /*--Login Header--*/
 h1 {
-  color: #28a745;
+  color: #007bff;
+}
+
+/*--Login Label--*/
+label {
+  text-align: right;
+  width: 100%;
 }
 
 /*--Warning--*/
 .warning {
-
+  display: inline-block;
 }
 
 .warning p {
-  float: left;
+  float: right;
+  text-align: right;
+  width: 50%;
   color: red;
-  width: 96%;
+
 }
 
 .warning img {
-  float: left;
   width: 4%;
 }
 
-/*--Email Warning P--*/
-
-/*--Password Warning P--*/

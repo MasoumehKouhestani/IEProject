@@ -1,6 +1,6 @@
 /*--Body--*/
 body {
-  background-color: #ebebeb;
+  background-color: #f1f3fa;
 }
 
 /*--Font--*/
@@ -8,21 +8,28 @@ body {
   font-family: "Comic Sans MS", serif;
 }
 
-/*--Edit Profile Button Div--*/
-#edit_profile_btn_div {
+/*--Row--*/
+.row {
+  background-color: white;
 }
 
 /*--Edit Profile Button Input--*/
 #edit_profile_btn {
   width: 100%;
   color: white;
-  background-color: darkgoldenrod;
+  background-color: #007bff;
   font-size: 100%;
 }
 
 /*--Edit Profile Header--*/
 h1 {
-  color: darkgoldenrod;
+  color: #007bff;
+}
+
+/*--Profile Setting Label--*/
+label {
+  text-align: right;
+  width: 100%;
 }
 
 /*--Warning--*/
@@ -31,16 +38,36 @@ h1 {
 }
 
 .warning p {
-  float: left;
+  float: right;
+  text-align: right;
+  width: 55%;
   color: red;
-  width: 96%;
 }
 
 .warning img {
-  float: left;
   width: 4%;
 }
 
-/*--Email Warning P--*/
 
-/*--Password Warning P--*/
+#modir-top-nav{
+  display: none;
+  font-size:x-small !important;
+}
+#carmand-top-nav{
+  display: none;
+
+}
+#student-top-nav{
+
+}
+.activenavitem{
+  background-color: #0056b3;
+}
+
+.headofinput{
+  font-size:large;
+}
+a{
+  cursor: pointer;
+}
+

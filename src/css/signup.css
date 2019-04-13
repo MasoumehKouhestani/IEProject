@@ -11,7 +11,7 @@ body {
 /*--Row--*/
 .col-lg-6 {
   background-color: #d4edda;
-  margin-top:5%;
+  margin-top: 5%;
 }
 
 /*--Sign Up Button Input--*/
@@ -50,6 +50,12 @@ label {
   width: 3%;
 }
 
-/*--Type Radio Button--*/
-input[name=type_signup] {
+/*--Type Select--*/
+select[name=position] {
+  width: 100%;
+}
+
+/*--Section Select--*/
+select[name=section] {
+  width: 100%;
 }

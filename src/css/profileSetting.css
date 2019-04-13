@@ -30,6 +30,7 @@ h1 {
 label {
   text-align: right;
   width: 100%;
+  font-weight: bold;
 }
 
 /*--Warning--*/
@@ -45,7 +46,7 @@ label {
 }
 
 .warning img {
-  width: 4%;
+  width: 3%;
 }
 
 

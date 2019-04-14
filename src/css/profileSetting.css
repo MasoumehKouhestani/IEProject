@@ -72,3 +72,8 @@ a{
   cursor: pointer;
 }
 
+/*--wrong submit profile editting*/
+.wrong_edit_profile_name, .wrong_edit_profile_username, .wrong_edit_profile_email,
+ .wrong_edit_profile_present_pass, .wrong_edit_profile_new_pass, .wrong_edit_profile_repeat_pass {
+  visibility: hidden;
+}

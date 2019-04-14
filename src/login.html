@@ -8,6 +8,7 @@
   <script src="js/popper.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
 
 </head>
 <body>
@@ -21,13 +22,13 @@
     <h1 class="text-center">
       ورود
     </h1>
-    <form method="post" class="form-group">
+    <form name="login_form" onsubmit="return validate_login()" method="post" class="form-group">
       <div class="form-group">
         <label for="email_login">پست الکترونیکی:</label>
         <input type="email" id="email_login" name="email_login" class="form-control" placeholder="پست الکترونیکی خود را وارد کنید"/>
         <div class="warning">
-          <img src="img/alarm.png">
-          <p>پست الکترونیکی وارد شده معتبر نیست!</p>
+          <img class="wrong_login_email" src="img/alarm.png">
+          <p class="wrong_login_email">پست الکترونیکی وارد شده معتبر نیست!</p>
         </div>
         <br>
       </div>
@@ -36,8 +37,8 @@
         <input type="password" id="password_login" name="password_login" class="form-control"
                placeholder="رمز عبور خود را وارد کنید"/>
         <div class="warning">
-          <img src="img/alarm.png">
-          <p>رمز عبور وارد شده معتبر نیست!</p>
+          <img class="wrong_login_pass" src="img/alarm.png">
+          <p class="wrong_login_pass">رمز عبور وارد شده معتبر نیست!</p>
         </div>
       </div>
       <div id="login_btn_div" class="form-group">

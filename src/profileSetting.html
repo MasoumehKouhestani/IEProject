@@ -104,14 +104,14 @@
     <h1 class="text-center">
       ویرایش پروفایل
     </h1>
-    <form method="post" class="form-group">
+    <form name="profile_edit_form" onsubmit="return validate_profile_edit()" method="post" class="form-group">
       <div class="form-group">
         <label for="name_edit_profile">نام و نام خانوادگی:</label>
         <input type="text" id="name_edit_profile" name="name_edit_profile" class="form-control"
                placeholder="نام و نام خانوادگی خود را وارد کنید"/>
         <div class="warning">
-          <p>نام و نام خانوادگی وارد شده معتبر نیست!</p>
-          <img src="img/alarm.png">
+          <p class="wrong_edit_profile_name">نام و نام خانوادگی وارد شده معتبر نیست!</p>
+          <img class="wrong_edit_profile_name" src="img/alarm.png">
         </div>
         <br>
       </div>
@@ -120,8 +120,8 @@
         <input type="text" id="username_edit_profile" name="username_edit_profile" class="form-control"
                placeholder="نام کاربری خود را وارد کنید"/>
         <div class="warning">
-          <p>نام کاربری وارد شده معتبر نیست!</p>
-          <img src="img/alarm.png">
+          <p class="wrong_edit_profile_username">نام کاربری وارد شده معتبر نیست!</p>
+          <img class="wrong_edit_profile_username" src="img/alarm.png">
         </div>
         <br>
       </div>
@@ -130,18 +130,19 @@
         <input type="email" id="email_edit_profile" name="email_edit_profile" class="form-control"
                placeholder="پست الکترونیکی خود را وارد کنید"/>
         <div class="warning">
-          <p>پست الکترونیکی وارد شده معتبر نیست!</p>
-          <img src="img/alarm.png">
+          <p class="wrong_edit_profile_email">پست الکترونیکی وارد شده معتبر نیست!</p>
+          <img class="wrong_edit_profile_email" src="img/alarm.png">
         </div>
         <br>
       </div>
       <div class="form-group">
         <label for="present_password_edit_profile">رمز عبور فعلی:</label>
-        <input type="password" id="present_password_edit_profile" name="present_password_edit_profile" class="form-control"
+        <input type="password" id="present_password_edit_profile" name="present_password_edit_profile"
+               class="form-control"
                placeholder="رمز عبور فعلی خود را وارد کنید"/>
         <div class="warning">
-          <p>رمز عبور فعلی وارد شده صحیح نیست!</p>
-          <img src="img/alarm.png">
+          <p class="wrong_edit_profile_present_pass">رمز عبور فعلی وارد شده صحیح نیست!</p>
+          <img class="wrong_edit_profile_present_pass" src="img/alarm.png">
         </div>
       </div>
       <div class="form-group">
@@ -149,17 +150,18 @@
         <input type="password" id="new_password_edit_profile" name="new_password_edit_profile" class="form-control"
                placeholder="رمز عبور جدید خود را وارد کنید"/>
         <div class="warning">
-          <p>رمز عبور جدید وارد شده معتبر نیست!</p>
-          <img src="img/alarm.png">
+          <p class="wrong_edit_profile_new_pass">رمز عبور جدید وارد شده معتبر نیست!</p>
+          <img class="wrong_edit_profile_new_pass" src="img/alarm.png">
         </div>
       </div>
       <div class="form-group">
         <label for="repeat_password_edit_profile">تکرار رمز عبور جدید:</label>
-        <input type="password" id="repeat_password_edit_profile" name="repeat_password_edit_profile" class="form-control"
+        <input type="password" id="repeat_password_edit_profile" name="repeat_password_edit_profile"
+               class="form-control"
                placeholder="رمز عبور جدید خود را تکرار کنید"/>
         <div class="warning">
-          <p>تکرار رمز عبور صحیح نیست!</p>
-          <img src="img/alarm.png">
+          <p class="wrong_edit_profile_repeat_pass">تکرار رمز عبور صحیح نیست!</p>
+          <img class="wrong_edit_profile_repeat_pass" src="img/alarm.png">
         </div>
       </div>
       <div id="edit_profile_btn_div" class="form-group">

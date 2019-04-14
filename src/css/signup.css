@@ -59,3 +59,8 @@ select[name=position] {
 select[name=section] {
   width: 100%;
 }
+
+/*--sign wrong entry*/
+.wrong_sign_name, .wrong_sign_username, .wrong_sign_email, .wrong_sign_pass {
+  visibility: hidden;
+}

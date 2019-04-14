@@ -8,6 +8,7 @@
   <script src="js/popper.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
 </head>
 <body>
 
@@ -20,14 +21,14 @@
     <h1 class="text-center">
       ثبت نام
     </h1>
-    <form method="post" class="form-group">
+    <form name="sign_form" onsubmit="return validate_signup()" method="post" class="form-group">
       <div class="form-group">
         <label for="name_signup">نام و نام خانوادگی:</label>
         <input type="text" id="name_signup" name="name_signup" class="form-control"
                placeholder="نام و نام خانوادگی خود را وارد کنید"/>
         <div class="warning">
-          <img src="img/alarm.png">
-          <p>نام و نام خانوادگی وارد شده معتبر نیست!</p>
+          <img class="wrong_sign_name" src="img/alarm.png">
+          <p class="wrong_sign_name">نام و نام خانوادگی وارد شده معتبر نیست!</p>
         </div>
         <br>
       </div>
@@ -36,8 +37,8 @@
         <input type="text" id="username_signup" name="username_signup" class="form-control"
                placeholder="نام کاربری خود را وارد کنید"/>
         <div class="warning">
-          <img src="img/alarm.png">
-          <p>نام کاربری وارد شده معتبر نیست!</p>
+          <img class="wrong_sign_username" src="img/alarm.png">
+          <p class="wrong_sign_username">نام کاربری وارد شده معتبر نیست!</p>
         </div>
         <br>
       </div>
@@ -45,8 +46,8 @@
         <label for="email_signup">پست الکترونیکی:</label>
         <input type="email" id="email_signup" name="email_signup" class="form-control" placeholder="پست الکترونیکی خود را وارد کنید"/>
         <div class="warning">
-          <img src="img/alarm.png">
-          <p>پست الکترونیکی وارد شده معتبر نیست!</p>
+          <img class="wrong_sign_email" src="img/alarm.png">
+          <p class="wrong_sign_email">پست الکترونیکی وارد شده معتبر نیست!</p>
         </div>
         <br>
       </div>
@@ -55,8 +56,8 @@
         <input type="password" id="password_signup" name="password_signup" class="form-control"
                placeholder="رمز عبور خود را وارد کنید"/>
         <div class="warning">
-          <img src="img/alarm.png">
-          <p>رمز عبور وارد شده معتبر نیست!</p>
+          <img class="wrong_sign_pass" src="img/alarm.png">
+          <p class="wrong_sign_pass">رمز عبور وارد شده معتبر نیست!</p>
         </div>
       </div>
       <div class="form-group">

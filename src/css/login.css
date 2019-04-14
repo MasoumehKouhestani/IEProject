@@ -50,3 +50,7 @@ label {
   width: 3%;
 }
 
+/*--wrong email and pass alert--*/
+.wrong_login_email, .wrong_login_pass {
+  visibility: hidden;
+}

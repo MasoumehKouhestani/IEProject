@@ -85,7 +85,7 @@
       <form method="post">
       <button type="submit" class="btn btn-success">تایید</button>
       <button type="submit" class="btn btn-secondary">غیرفعال</button>
-      <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#other">ویرایش پروفایل</button>
+      <input type="button" value="ویرایش پروفایل" class="btn btn-info" data-toggle="modal" data-target="#other">
       <button type="submit" class="btn btn-danger">حذف</button>
       </form>
       </div>
@@ -100,7 +100,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">
-          توضیحات سایرین
+          ویرایش پروفایل کاربر انتخابی
         </h5>
       </div>
 
@@ -108,33 +108,49 @@
         <div class="row bg-white">
           <div class="col-sm">
             <div class="boxinmodal text-sm-right ">
-              <p class="text-primary font-weight-bold">
-                احمد احمدی
-              </p>
-              <p class="text-secondary">
-                مشکل از قسمت شوفاژخونه است
-              </p>
+              <form name="profile_edit_form" onsubmit="return validate_profile_edit()" method="post" class="form-group">
+                <div class="form-group">
+                  <label for="name_edit_profile">نام و نام خانوادگی:</label>
+                  <input type="text" id="name_edit_profile" name="name_edit_profile" class="form-control"
+                         placeholder="نام و نام خانوادگی "/>
 
-              <br>
+                  <br>
+                </div>
+                <div class="form-group">
+                  <label for="username_edit_profile">نام کاربری:</label>
+                  <input type="text" id="username_edit_profile" name="username_edit_profile" class="form-control"
+                         placeholder="نام کاربری "/>
 
-            </div>
-            <br>
-            <div class="boxinmodal text-sm-right ">
-              <p class="text-primary font-weight-bold">
-                محمد محمدی
-              </p>
-              <p class="text-secondary">
-                لطفا دیگ شوفاژخونه را تعمیر کنید
-              </p>
-              <br>
+                  <br>
+                </div>
+                <div class="form-group">
+                  <label for="email_edit_profile">پست الکترونیکی:</label>
+                  <input type="email" id="email_edit_profile" name="email_edit_profile" class="form-control"
+                         placeholder="پست الکترونیکی "/>
 
-            </div>
+                  <br>
+                </div>
+                <div class="form-group">
+                  <label for="new_password_edit_profile">رمز عبور جدید:</label>
+                  <input type="password" id="new_password_edit_profile" name="new_password_edit_profile" class="form-control"
+                         placeholder="رمز عبور جدید "/>
 
-            <br>
-          </div>
-        </div>
+                </div>
+                <div class="form-group">
+                  <label for="repeat_password_edit_profile">تکرار رمز عبور جدید:</label>
+                  <input type="password" id="repeat_password_edit_profile" name="repeat_password_edit_profile"
+                         class="form-control"
+                         placeholder="تکرار رمز عبور جدید "/>
+
+                </div>
+                <div id="edit_profile_btn_div" class="form-group">
+                  <input id="edit_profile_btn" type="submit" class="form-control btn submit-btn btn-primary" value="اعمال تغییرات"/>
+                </div>
+              </form>
+
       </div>
     </div>
+        </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-danger" data-dismiss="modal">
         بستن

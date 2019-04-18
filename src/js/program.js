@@ -18,9 +18,10 @@ $(document).ready(function() {
     $('#filter').click(function(e){
         e.preventDefault();
     });
-    $('button').click(function(e){
-        e.preventDefault();
-    });
+
+//    $('button').click(function(e){
+//        e.preventDefault();
+//    });
 
     $(".down").click(function(){
         $('.downloadnone').show()

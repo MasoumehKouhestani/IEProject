@@ -22,7 +22,9 @@ $(document).ready(function(){
         '        <br>\n' +
         '        <form method="post">\n' +
         '          <button type="submit" class="btn btn-success">تایید</button>\n' +
-        '          <button type="submit" class="btn btn-danger">لغو</button>\n' +
+        '          <button type="submit" class="btn btn-secondary">غیرفعال</button>\n' +
+        '          <button type="submit" class="btn btn-info">ویرایش پروفایل</button>\n' +
+        '          <button type="submit" class="btn btn-danger">حذف</button>\n' +
         '        </form>\n' +
         '      </div>');
       $('.person_info_container').append(s);

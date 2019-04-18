@@ -29,8 +29,9 @@ span {
 }
 
 .person_info {
-  padding: 3%;
-  background-color: #d4edda;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #f1f3fa;
   text-align: right;
   font-weight: bold;
 }

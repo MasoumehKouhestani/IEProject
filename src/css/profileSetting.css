@@ -1,6 +1,6 @@
 /*--Body--*/
 body {
-  background-color: #ebebeb;
+  background-color: #f1f3fa;
 }
 
 /*--Font--*/
@@ -8,21 +8,29 @@ body {
   font-family: "Comic Sans MS", serif;
 }
 
-/*--Edit Profile Button Div--*/
-#edit_profile_btn_div {
+/*--Row--*/
+.col-sm-6 {
+  background-color: white;
 }
 
 /*--Edit Profile Button Input--*/
 #edit_profile_btn {
   width: 100%;
   color: white;
-  background-color: darkgoldenrod;
+  background-color: #007bff;
   font-size: 100%;
 }
 
 /*--Edit Profile Header--*/
 h1 {
-  color: darkgoldenrod;
+  color: #007bff;
+}
+
+/*--Profile Setting Label--*/
+label {
+  text-align: right;
+  width: 100%;
+  font-weight: bold;
 }
 
 /*--Warning--*/
@@ -31,16 +39,41 @@ h1 {
 }
 
 .warning p {
-  float: left;
+  float: right;
+  text-align: right;
+  width: 55%;
   color: red;
-  width: 96%;
 }
 
 .warning img {
-  float: left;
-  width: 4%;
+  width: 3%;
 }
 
-/*--Email Warning P--*/
 
-/*--Password Warning P--*/
+#modir-top-nav{
+  display: none;
+  font-size:x-small !important;
+}
+#carmand-top-nav{
+  display: none;
+
+}
+#student-top-nav{
+
+}
+.activenavitem{
+  background-color: #0056b3;
+}
+
+.headofinput{
+  font-size:large;
+}
+a{
+  cursor: pointer;
+}
+
+/*--wrong submit profile editting*/
+.wrong_edit_profile_name, .wrong_edit_profile_username, .wrong_edit_profile_email,
+ .wrong_edit_profile_present_pass, .wrong_edit_profile_new_pass, .wrong_edit_profile_repeat_pass {
+  visibility: hidden;
+}

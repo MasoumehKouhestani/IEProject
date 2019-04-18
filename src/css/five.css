@@ -7,7 +7,10 @@
 
 }
 #student-top-nav{
+<<<<<<< HEAD
 
+=======
+>>>>>>> 87019a561a7006e154c641379a34584223855a47
 }
 .activenavitem{
     background-color: #0056b3;
@@ -21,4 +24,8 @@ body{
 }
 a{
     cursor: pointer;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 87019a561a7006e154c641379a34584223855a47

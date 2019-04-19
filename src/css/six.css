@@ -18,32 +18,33 @@ body{
 
 }
 
+
 .header-mord {
     background-color: #d4edda;
 }
-.enteghdtext{
-    display: none;
-}
-.darkhasttext{
-    display: none;
-}
-.pishnahadtext{
-    display: none;
-}
+/*.enteghdtext{*/
+    /*display: none;*/
+/*}*/
+/*.darkhasttext{*/
+    /*display: none;*/
+/*}*/
+/*.pishnahadtext{*/
+    /*display: none;*/
+/*}*/
 .morddisplay{
     margin-left:1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
 }
-.close{
-    display: none;
-}
-.inqueue{
-    display: none;
-}
-.postponed{
-    display: none;
-}
+/*.close{*/
+    /*display: none;*/
+/*}*/
+/*.inqueue{*/
+    /*display: none;*/
+/*}*/
+/*.postponed{*/
+    /*display: none;*/
+/*}*/
 .mdec{
     background-color:#f1f3fa;
 }
@@ -69,9 +70,7 @@ body{
 .downloadnone{
     display: none;
 }
-.downloadnone-you{
-    display: none;
-}
+
 a{
     cursor: pointer;
 }

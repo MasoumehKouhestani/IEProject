@@ -13,6 +13,9 @@ $(document).ready(function() {
         $(this).next().next().hide(3000)
     });
 
+    $('input').click(function (e) {
+      e.preventDefault();
+    });
 
 
     $('li').hover(function () {//all

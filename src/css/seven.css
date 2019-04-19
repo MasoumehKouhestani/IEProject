@@ -84,3 +84,7 @@ body{
 a{
     cursor: pointer;
 }
+
+.egdam_pos_dsc, .name_egdam, .egdam_erja_dsc {
+  visibility: hidden;
+}

@@ -28,45 +28,45 @@
   <div class="col-sm-8 d-flex justify-content-sm-center font-weight-bold ">
 
     <ul class="nav " id="modir-top-nav">
-      <li class="nav-item"><a class="nav-link">
+      <li class="nav-item"><a href="orginal.html" class="nav-link">
         صفحه اصلی
       </a></li>
-      <li class="nav-item"><a class="nav-link">
+      <li class="nav-item"><a href="profileSetting.html" class="nav-link">
         ویرایش پروفایل
       </a></li>
       <li class="nav-item "><a class="nav-link text-white" href="five.html">
         ثبت مورد
       </a></li>
-      <li class="nav-item"><a class="nav-link">
+      <li class="nav-item"><a href="eight.html" class="nav-link">
         موارد ثبت شده توسط شما
       </a></li>
-      <li class="nav-item"><a class="nav-link">
+      <li class="nav-item"><a href="userAuthentication.html" class="nav-link">
         تایید کاربران
       </a></li>
-      <li class="nav-item "><a class="nav-link">
+      <li class="nav-item "><a href="six.html" class="nav-link">
         مشاهده موارد
       </a></li>
-      <li class="nav-item"><a class="nav-link">
+      <li class="nav-item"><a href="nine.html" class="nav-link">
         مدیریت کاربر
       </a></li>
-      <li class="nav-item"><a class="nav-link">
+      <li class="nav-item"><a href="ten.html" class="nav-link">
         گزارش گیری
       </a></li>
     </ul>
     <ul class="nav " id="carmand-top-nav">
-      <li class="nav-item"><a class="nav-link">
+      <li class="nav-item"><a href="orginal.html" class="nav-link">
         صفحه اصلی
       </a></li>
-      <li class="nav-item"><a class="nav-link">
+      <li class="nav-item"><a href="profileSetting.html" class="nav-link">
         ویرایش پروفایل
       </a></li>
       <li class="nav-item "><a class="nav-link text-white" href="five.html">
         ثبت مورد
       </a></li>
-      <li class="nav-item"><a class="nav-link">
+      <li class="nav-item"><a href="eight.html" class="nav-link">
         موارد ثبت شده توسط شما
       </a></li>
-      <li class=" nav-item "><a class="nav-link">
+      <li class=" nav-item "><a href="six.html" class="nav-link">
         مشاهده موارد
       </a></li>
     </ul>
@@ -187,7 +187,7 @@
       <p class="text-right text-primary font-weight-bold">
         تغییر وضعیت
         : </p>
-      <form name="pos_change" onsubmit="return validate_egdam()">
+      <form name="pos_change" >
         <div class="form-group text-right">
 
           <p class="font-weight-bold ">
@@ -216,14 +216,15 @@
             توضیحات مورد نظر خود را بنویسید
             .</p>
 
-          <textarea class="form-control text-right text-secondary" rows="7" name="egdam_pos_dsc">
+          <textarea class="form-control text-right text-secondary t1" rows="7" name="egdam_pos_dsc">
   توضیحات
                 </textarea>
 
           <p class="text-danger text-right egdam_pos_dsc">
             <i class="fas fa-exclamation-triangle"></i>
             این فیلد اجباری است! </p>
-          <input type="submit" class="btn btn-info form-control" value="ثبت">
+          <br>
+          <input type="submit" class="btn btn-info form-control f" value="ثبت" id="submit1">
 
         </div>
 
@@ -236,31 +237,32 @@
       <p class="text-right text-primary font-weight-bold">
         تغییر ارجاع
         : </p>
-      <form name="erja_change" onsubmit="return validate_egdam()">
+      <form name="erja_change">
         <div class="form-group text-right">
 
           <p class="font-weight-bold ">
             <b class="text-primary ">1.</b>
             نام فردی که میخواهید به ان ارجاع دهید را وارد کنید
             .</p>
-          <input name="name_egdam" type="text" class="form-control" placeholder="نام و نام خانوادگی">
-          <br>
+          <input name="name_egdam" type="text" class="form-control i1" placeholder="نام و نام خانوادگی">
+
+
           <p class="text-danger text-right name_egdam">
-            <i class="fas fa-exclamation-triangle"></i>
+            <i class="fas fa-exclamation-triangle ee7"></i>
             چنین فردی در سیستم وجود ندارد
             ! </p>
           <p class="font-weight-bold headofinput">
             <b class="text-primary ">2.</b>
             توضیحات مورد نظر خود را بنویسید
             .</p>
-          <textarea class="form-control text-right text-secondary" rows="7" name="egdam_erja_dsc">
+          <textarea class="form-control text-right text-secondary t2" rows="7" name="egdam_erja_dsc">
   توضیحات
                 </textarea>
-          <p class="text-danger text-right egdam_erja_dsc"  >
+          <p class="text-danger text-right egdam_erja_dsc e7"  >
             <i class="fas fa-exclamation-triangle"></i>
             این فیلد اجباری است!</p>
-
-          <input type="submit" class="btn btn-info form-control" value="ثبت">
+<br><br>
+          <input type="submit" class="btn btn-info form-control f" value="ثبت" id="submit2">
 
         </div>
 

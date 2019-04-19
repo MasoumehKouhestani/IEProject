@@ -21,11 +21,30 @@ $(document).ready(function(){
         '</span><br>\n' +
         '        <br>\n' +
         '        <form method="post">\n' +
-        '          <button type="submit" class="btn btn-success">تایید</button>\n' +
-        '          <button type="submit" class="btn btn-danger">لغو</button>\n'+
+        '          <button type="submit" class="btn btn-success b1 b">تایید</button>\n' +
+        '          <button type="submit" class="btn btn-danger b2 b">رد</button>\n'+
+        '   <p class="text-right text-success t">تایید شد! </p>\n' +
+        '          <p class="text-right text-danger r"> رد شد!</p>'+
         '        </form>\n' +
         '      </div>');
       $('.person_info_container').append(s);
+      $('.b1').click(function() {
+          $(this).next().next().next().hide();
+        $(this).next().next().show();
+
+          $(this).next().next().hide(4000);
+      }
+      )
+      $('.b2').click(function() {
+        $(this).next().hide();
+        $(this).next().next().show();
+
+        $(this).next().next().hide(4000);
+        }
+      )
+      $('.b').click(function(e){
+        e.preventDefault();
+      });
     }
 
   });

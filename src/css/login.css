@@ -34,13 +34,11 @@ label {
 
 /*--Warning--*/
 .warning {
-  display: inline-block;
+
 }
 
-.warning p {
-  float: right;
-  text-align: right;
-  width: 50%;
+.warning span {
+
   color: red;
 
 }

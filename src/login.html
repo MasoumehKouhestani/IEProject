@@ -3,46 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <title>ورود</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/login.css" rel="stylesheet">
   <script src="js/popper.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/validateFields.js"></script>
+  <script src="js/main.js"></script>
 
 </head>
 <body>
-
+<br><br>
 <!--Login Form-->
 <div class="row">
-  <div class="col-sm-3">
+  <div class="col-sm-2">
   </div>
 
-  <div class="col-sm-6">
+  <div class="col-sm-8 bg-white">
+    <p class="text-primary font-weight-bold text-center" style="padding-top: 1rem">ورود به سامانه انتقادات و پیشنهادات دانشگاه شهید بهشتی </p>
     <br>
     <form name="login_form" onsubmit="return validate_login()" method="post" class="form-group">
       <div class="form-group">
-        <label for="email_login">پست الکترونیکی:</label>
+        <label for="email_login"><i class="fas fa-address-card"></i>
+          پست الکترونیکی:</label>
         <input type="email" id="email_login" name="email_login" class="form-control" placeholder="پست الکترونیکی خود را وارد کنید"/>
-        <div class="warning">
+        <div class="warning wemail text-right">
           <img class="wrong_login_email" src="img/alarm.png">
-          <p class="wrong_login_email">پست الکترونیکی وارد شده معتبر نیست!</p>
+          <span class="wrong_login_email ">پست الکترونیکی وارد شده معتبر نیست!</span>
         </div>
         <br>
       </div>
       <div class="form-group">
-        <label for="password_login">رمز عبور:</label>
+        <label for="password_login"><i class="fas fa-lock"></i>
+          رمز عبور:</label>
         <input type="password" id="password_login" name="password_login" class="form-control"
                placeholder="رمز عبور خود را وارد کنید"/>
-        <div class="warning">
+        <div class="warning wpass text-right">
           <img class="wrong_login_pass" src="img/alarm.png">
-          <p class="wrong_login_pass">رمز عبور وارد شده معتبر نیست!</p>
+          <span class="wrong_login_pass ">رمز عبور وارد شده معتبر نیست!</span>
         </div>
       </div>
       <div id="login_btn_div" class="form-group">
-        <input id="login_btn" type="submit" class="form-control btn btn-primary" value="ورود"/>
+        <input id="login_btn" type="submit" class="form-control btn btn-primary font-weight-bold" value="ورود"/>
       </div>
-    </form>
+    </form><p class="text-right font-weight-bold">
+    <a class="text-right text-secondary" href="signup.html"> در سامانه عضو نیستید؟ کلیک کنید !</a>
+  </p>
   </div>
   <div class="col-sm-3">
   </div>

@@ -27,7 +27,7 @@ $(document).ready(function(){
             }
             else if(x.type==="phishnahad"){
                     type=' <span class="text-success pishnahadtext">\n' +
-                        '  پیشنهاد\n' +
+                        '  پیشهاد\n' +
                         '  &nbsp;&nbsp;\n' +
                         '    </span>';
             }

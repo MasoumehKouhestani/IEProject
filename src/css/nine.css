@@ -50,22 +50,23 @@ span {
 
 a {
   cursor: pointer;
+  color: white;
 }
 
 button {
   width: 7rem;
 }
 .boxinmodal{
-    margin-left:1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    background-color:#f1f3fa;
+  margin-left:1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background-color:#f1f3fa;
 }
 .search-btn{
-width : 4 rem;
+  width : 4rem;
 }
 

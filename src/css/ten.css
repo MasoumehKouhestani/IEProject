@@ -1,24 +1,25 @@
 #modir-top-nav{
 
-    font-size:x-small !important;
+  font-size:x-small !important;
 }
 #carmand-top-nav{
-    display: none;
+  display: none;
 
 }
 #student-top-nav{
-    display: none;
+  display: none;
 }
 .activenavitem{
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 body{
-    background-color:#f1f3fa;
+  background-color:#f1f3fa;
 }
 
 .headofinput{
-    font-size:large;
+  font-size:large;
 }
 a{
-    cursor: pointer;
+  cursor: pointer;
+  color: white;
 }

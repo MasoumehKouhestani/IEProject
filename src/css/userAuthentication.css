@@ -50,5 +50,12 @@ span {
 
 a {
   cursor: pointer;
+  color: white;
+}
+.t{
+  display: none;!important;
+}
+.r{
+  display: none;!important;
 }
 

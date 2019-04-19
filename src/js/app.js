@@ -6,6 +6,9 @@ $(document).ready(function() {
     $('#filter').click(function(e){
         e.preventDefault();
     });
+  $('.f').click(function(e){
+    e.preventDefault();
+  });
 
     $(".down").click(function(){//six
 
@@ -13,12 +16,9 @@ $(document).ready(function() {
         $(this).next().next().hide(3000)
     });
 
-    $('input').click(function (e) {
-      e.preventDefault();
-    });
 
 
-    $('li').hover(function () {//all
+    $('.nav-link').hover(function () {//all
             $(this).css('backgroundColor', '#0056b3')
 
         },
@@ -39,6 +39,8 @@ $(document).ready(function() {
             $('#selall').hide()
         }
     })
-
+  $('.var5').focus(function(){
+    $(this).next().hide();
+  })
 
 });

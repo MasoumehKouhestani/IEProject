@@ -18,17 +18,17 @@ $(document).ready(function() {
 
 
 
-    $('.nav-link').hover(function () {//all
-            $(this).css('backgroundColor', '#0056b3')
-
-        },
-        function () {
-            if($(this).hasClass('activenavitem')===true){}
-            else{
-                $(this).css('backgroundColor', '#007bff ')
-            }
-        }
-    );
+    // $('.nav-link').hover(function () {//all
+    //         $(this).css('backgroundColor', '#0056b3')
+    //
+    //     },
+    //     function () {
+    //         if($(this).hasClass('activenavitem')===true){}
+    //         else{
+    //             $(this).css('backgroundColor', '#007bff ')
+    //         }
+    //     }
+    // );
     $('#filter').click(function(){//six
         if($('select option:selected').val()==='all'){
             $('#selmyself').hide()

@@ -33,17 +33,17 @@ $(document).ready(function() {
   });
 
   $('#selall').hide();
-  $('li').hover(function () {
-      $(this).css('backgroundColor', '#0056b3')
-
-    },
-    function () {
-      if($(this).hasClass('activenavitem')===true){}
-      else{
-        $(this).css('backgroundColor', '#007bff ')
-      }
-    }
-  );
+  // $('li').hover(function () {
+  //     $(this).css('backgroundColor', '#0056b3')
+  //
+  //   },
+  //   function () {
+  //     if($(this).hasClass('activenavitem')===true){}
+  //     else{
+  //       $(this).css('backgroundColor', '#007bff ')
+  //     }
+  //   }
+  // );
   $('#filter').click(function(){
     if($('select option:selected').val()==='all'){
       $('#selmyself').hide()

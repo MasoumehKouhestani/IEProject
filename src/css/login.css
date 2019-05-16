@@ -3,27 +3,11 @@ body {
   background-color: #f1f3fa;
 }
 
-/*--Font--*/
-* {
-  font-family: "Comic Sans MS", serif;
+
+i{
+  color:#7abaff;
 }
 
-/*--Row--*/
-.col-sm-6 {
-  background-color: white;
-  margin-top:5%;
-}
-
-/*--Login Button Input--*/
-#login_btn {
-  width: 100%;
-  font-size: 100%;
-}
-
-/*--Login Header--*/
-h1 {
-  color: #007bff;
-}
 
 /*--Login Label--*/
 label {
@@ -37,17 +21,10 @@ label {
 
 }
 
-.warning span {
 
-  color: red;
-
-}
 
 .warning img {
   width: 3%;
 }
 
-/*--wrong email and pass alert--*/
-.wrong_login_email, .wrong_login_pass {
-  visibility: hidden;
-}
+

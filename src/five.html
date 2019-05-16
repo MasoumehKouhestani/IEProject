@@ -4,11 +4,12 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrapValidator.css"/>
   <link href="css/five.css" rel="stylesheet">
   <script src="js/popper.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/checkValid.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
   <script src="js/app.js"></script>
   <meta charset="UTF-8">
   <title>
@@ -32,7 +33,7 @@
       <li class="nav-item"><a href="profileSetting.html" class="nav-link ">
         ویرایش پروفایل
       </a></li>
-      <li class="nav-item activenavitem"><a href="five.html" class="nav-link text-white">
+      <li class="nav-item activenavitem rounded"><a href="five.html" class="nav-link text-white">
         ثبت مورد
       </a></li>
       <li class="nav-item"><a href="eight.html" class="nav-link ">
@@ -47,7 +48,7 @@
       <li class="nav-item"><a href="profileSetting.html" class="nav-link ">
         ویرایش پروفایل
       </a></li>
-      <li class="nav-item activenavitem"><a href="five.html" class="nav-link text-white">
+      <li class="nav-item activenavitem rounded"><a href="five.html" class="nav-link text-white">
         ثبت مورد
       </a></li>
       <li class="nav-item"><a href="eight.html" class="nav-link ">
@@ -73,7 +74,7 @@
       <li class="nav-item"><a href="profileSetting.html" class="nav-link ">
         ویرایش پروفایل
       </a></li>
-      <li class="nav-item activenavitem"><a href="five.html" class="nav-link text-white">
+      <li class="nav-item activenavitem rounded"><a href="five.html" class="nav-link text-white">
         ثبت مورد
       </a></li>
       <li class="nav-item"><a href="eight.html" class="nav-link ">
@@ -103,7 +104,10 @@
       ثبت مورد
 
     </p>
-    <form name="confirm_form" onsubmit="return validate_confirm()" method="get">
+    <form id="form"  method="post" class="form-group form-horizontal"
+          data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+          data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+          data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
       <div class="form-group">
         <p class="font-weight-bold headofinput">
           <b class="text-primary ">1.</b>
@@ -173,42 +177,54 @@
           مورد خود را به چه کسی ارجاع می دهید
 
           ؟ </p>
-        <input class="form-control var5" type="text" name="referenceperson" id="refer_to" placeholder="نام ونام خانوادگی آن فرد ">
+        <div class="form-group">
+        <input class="form-control var5" type="text" name="referenceperson" id="refer_to" placeholder="نام ونام خانوادگی آن فرد "  data-bv-notempty="true"
+               data-bv-notempty-message=" نام ارجاع گیرنده نمی تواند خالی باشد! "
 
-        <div class="warning_confirm">
-          <p class="wrong_referenceperson">
-            این فیلد اجباری است
-            <img class="wrong_referenceperson" src="img/alarm.png">
-          </p>
+               data-bv-stringlength="true"
+               data-bv-stringlength-min="6"
+               data-bv-stringlength-max="30"
+               data-bv-stringlength-message="   نام ارجاع گیرنده باید بیشتز از شش و کمتر از 30 کاراکتر باشد!"
+
+               data-bv-regexp="true"
+               data-bv-regexp-regexp="^[a-zA-Z0-9]+$"
+               data-bv-regexp-message="  نام ارجاع گیرنده فقط می تواند شامل حروف و عدد باشد!   "
+        >
         </div>
-        <br> <br>
+
+        <br>
         <p class="font-weight-bold headofinput">
           <b class="text-primary ">4.</b>
           موضوع مورد خود را به طور مختصر بنویسید
 
           .</p>
-        <input class="form-control var5" id="topic_case" type="text" name="mozo" placeholder="موضوع">
+        <div class="form-group">
+        <input class="form-control var5" id="topic_case" type="text" name="mozo" placeholder="موضوع" data-bv-notempty="true"
+               data-bv-notempty-message=" موضوع نمی تواند خالی باشد! "
 
-        <div class="warning_confirm">
-          <p class="wrong_topic_case">
-            این فیلد اجباری است
-            <img class="wrong_topic_case" src="img/alarm.png">
-          </p>
+               data-bv-stringlength="true"
+               data-bv-stringlength-min="6"
+               data-bv-stringlength-max="30"
+               data-bv-stringlength-message="  موضوع باید بیشتز از شش و کمتر از 30 کاراکتر باشد!"
+
+               data-bv-regexp="true"
+               data-bv-regexp-regexp="^[a-zA-Z0-9]+$"
+               data-bv-regexp-message="  موضوع فقط می تواند شامل حروف و عدد باشد!   ">
         </div>
-        <br> <br>
+
+        <br>
 
         <p class="font-weight-bold headofinput">
           <b class="text-primary ">5.</b>
           توضیحات راجب مورد خود را شرح بدهید
           . </p>
-        <textarea class="form-control var5" id="description_case" rows="7" name="tozihatcase"></textarea>
-        <div class="warning_confirm">
-          <p class="wrong_description_case">
-            این فیلد اجباری است
-            <img class="wrong_description_case" src="img/alarm.png">
-          </p>
+        <div class="form-group">
+        <textarea class="form-control var5" id="description_case" rows="7" name="tozihatcase" data-bv-notempty="true"
+                  data-bv-notempty-message="توضیحات نمی تواند خالی باشد! "
+        ></textarea>
+
         </div>
-        <br><br>
+        <br>
 
         <p class="font-weight-bold headofinput">
           <b class="text-primary ">6.</b>
@@ -224,5 +240,10 @@
   </div>
 </div>
 <br><br><br><br>
+<script>
+  $(document).ready(function() {
+    $('#form').bootstrapValidator();
+  });
+</script>
 </body>
 </html>

@@ -23,7 +23,7 @@ body {
 }
 
 /*--Sign Up Header--*/
-h1 {
+i {
   color: #007bff;
 }
 
@@ -33,23 +33,6 @@ label {
   width: 100%;
   font-weight: bold;
 }
-
-/*--Warning--*/
-.warning {
-
-}
-
-.warning p {
-  float: right;
-  text-align: right;
-  width: 55%;
-  color: red;
-}
-
-.warning img {
-  width: 3%;
-}
-
 /*--Type Select--*/
 select[name=position] {
   width: 100%;
@@ -60,7 +43,3 @@ select[name=section] {
   width: 100%;
 }
 
-/*--sign wrong entry*/
-.wrong_sign_name, .wrong_sign_username, .wrong_sign_email, .wrong_sign_pass {
-  visibility: hidden;
-}
